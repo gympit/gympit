@@ -1,0 +1,335 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 77%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+.jet1 {
+    display: block;
+    width: 100%;
+
+}
+
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.forumlogo {
+    height: inherit;
+    margin-top: -58%;
+    margin-left: 100%;
+    border-radius: 10% 30%;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Tahoma;
+    letter-spacing: 2.4px;
+    margin: 0;
+    padding: 30px 0;
+}
+
+
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    letter-spacing: 2.4px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+.tile-container{margin: 0 -7px; font-size: 0}
+
+.tile{
+  width: 24.8333%;
+  padding: 0 7px 23.5%;
+  float: none;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 11px;}
+
+.tile .tile-item {
+  position: absolute;
+  margin: 0;
+  padding: 5%;
+  color: #fff;
+  display: block;
+  left: 7px;
+  right: 7px;
+  top: 7px;
+  bottom: 7px;
+  height: auto;
+  width: auto;
+  border-radius: 8px;}
+
+.tile .tile-item-inner{
+  display: block;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;}
+
+.tile .tile-img {
+  height: 60%;
+  max-width: 100%;
+  min-width: 50%;   
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;}
+
+.tile .tile-bg {
+  background: -moz-linear-gradient(top,  rgba(29,72,137,0) 0%, rgba(29,72,137,0) 23%, rgba(29,72,137,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(29,72,137,0)   0%,rgba(29,72,137,0) 23%,rgba(29,72,137,1) 100%);
+  background: linear-gradient(to bottom,  rgba(29,72,137,0) 0%,rgba(29,72,137,0) 23%,rgba(0,0,0) 200%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d4889', endColorstr='#1d4889',GradientType=0 );
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;}
+
+.tile .tile-content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;}
+
+.tile .tile-title{
+  font-weight: 900;
+  font-size: 1.2em;}
+  
+
+.tile .tile-subtitle{
+  font-weight: 500;
+  font-size: 0.875em;
+  text-transform: uppercase;}
+
+.tile .tile-price-box{
+    
+  margin-top: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;}
+
+.tile .tile-price-box .tile-price{
+  font-size: 1.15em;
+  font-weight: 700}
+
+.tile .tile-price-box .tile-crossed-price{
+  font-size: 0.875em;
+  opacity: 0.7;
+  text-decoration: line-through;
+  margin-left: 5px;}
+
+.tile .tile-price-box .tile-price-label{
+  font-size: 0.75em;
+  display: none}
+
+.tile .tile-item:hover .tile-price-label{display: block}
+
+.tile .tile-item:hover img.tile-img{
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);}
+
+.tile .tile-item:hover .tile-price-box{margin-bottom: 7px;}
+
+
+
+@media  (max-width: 1020px){
+    
+
+    }
+    
+    @media (max-width: 700px) {
+      
+    
+    
+    }
+    
+    @media (max-width: 380px){
+  
+
+        .jet1 {
+            display: none;
+            width: 100%;
+        
+        }
+        
+    
+    }
+
+    @media (max-width : 1199px) {
+        
+        .tile .tile-content{padding: 15px;}
+    }
+
+    @media (max-width: 979px) {        
+
+        .tile {width: 50%;  padding-bottom: 50%
+    }
+}
+    @media (max-width: 767px) {
+        .tile {float: none; font-size: 10px; margin: 0 auto;}
+
+        
+    }
+
+
+    @media (max-width: 639px){
+        
+        }
+        
+
+    @media (max-width : 380px) {
+        .tile {width: 100%; padding-bottom: 100%}
+    }
+
+    @media (max-width: 470px){
+     
+
+    }
+
+@media (max-width: 330px){
+   
+
+}
